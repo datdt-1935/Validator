@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Validator",
     platforms: [
-        .macOS(.v10_13), .iOS(.v11), .tvOS(.v11),
+        .macOS(.v10_13), .iOS(.v10), .tvOS(.v11),
     ],
     products: [
         .library(name: "Validator", targets: ["Validator"]),
