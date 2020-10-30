@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
@@ -9,9 +9,8 @@ let package = Package(
     products: [
         .library(name: "Validator", targets: ["Validator"]),
     ],
-    dependencies: [],
     targets: [
-        .target(name: "Validator", dependencies: [], path: "Validator/Sources"),
+        .target(name: "Validator", path: "Validator/Sources"),
         .testTarget(name: "ValidatorTests", dependencies: ["Validator"], path: "Validator/ValidatorTests"),
     ]
 )
